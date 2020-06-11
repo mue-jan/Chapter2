@@ -1,136 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset='utf-8'>
-    <title>🔥 Sofie's Personal Site &#128293;</title>
-    <meta http-equiv="refresh" content="20">
+    <meta charset="utf-8">
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="container">
+        <div lass="row">
 
-    <table cellspacing="20">
-        <tr>
-            <td>
-                <img src="data:image/jpeg;base64,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" alt="BusinessPicture">
-            </td>
-            <td>
-                <h1>
-                    Sofie Barnova
-                </h1>
-                <p>
-                    <em><b>Figure-Skater</b> in Oberstdorf</em>
-                </p>
-                <p>
-                    Born in Czech, moved to the US, went back to Swiss and lives now in Germany.
-                </p>
-            </td>
-        </tr>
-    </table>
+            <div type="button" id="green" class="btn green">
 
-    <hr>
+            </div>
 
-    <h3>
-        What she's really good in:
-    </h3>
-    <ul>
-        <li>feeling</li>
-        <li>caring</li>
-        <li>cooking</li>
-        <ul>
-            <li>mexican</li>
-            <li>chinese</li>
-        </ul>
-        <li>massaging</li>
-        <ul>
-            everywhere
-        </ul>
-        <li>making a mess in the kitchen</li>
-        <ul>
-            everywhere
-        </ul>
-    </ul>
+            <div type="button" id="red" class="btn red">
 
-    <hr>
+            </div>
+        </div>
 
-    <h3>
-        <a href="secondPage.html">Her Hobbies</a>
-    </h3>
+        <div class="row">
 
-    <hr>
+            <div type="button" id="yellow" class="btn yellow">
 
-    <h4>Sexy-Pics</h4>
-    <ul>
-        <li>
-            <a href="https://i.pinimg.com/280x280_RS/96/56/e0/9656e065eb7d1021285f5c685192c1a6.jpg">Ouhh</a>
-        </li>
-        <li>
-            <a href="https://d33veqcui7lu1w.cloudfront.net/files/users/large/1570241_stringio.jpg?1409041443">ahh</a>
-        </li>
-        <li>
-            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPeM6LXAyoMhFvR6OGqI_jX0RvW7aShjJ4B08qxMVxV8sSJe_7Aw&s">wooow</a>
-        </li>
-    </ul>
-    <hr>
-    <a href="contact.html">Contact her</a>
+            </div>
+            <div type="button" id="blue" class="btn blue">
 
-    <hr>
+            </div>
 
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-        <thead>
-            <tr>
-                <th>DATES</th>
-                <th>WORK</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2010-2013</td>
-                <td>Lead Skater in all Shows!</td>
-            </tr>
-            <tr>
-                <td>2013-today</td>
-                <td>Leading Teacher</td>
-            </tr>
-        </tbody>
-        <tfoot>
-        </tfoot>
-    </table>
+        </div>
 
-    <hr>
+    </div>
 
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>
-                <table>
-                    <tr>
-                        <td>Skating</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td>Cooking</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <tr>
-                            <td>Being on Time</td>
-                            <td>✰✰⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Working right now</td>
-                            <td>✰✰✰✰⭐</td>
-                        </tr>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="game.js"></script>
 </body>
 
 </html>
