@@ -9,7 +9,7 @@ var userClickedPattern = [];
 var level = 0;
 
 // START / STOP
-$("body").keydown(function() {
+$("h1").click(function() {
     $("body").css("background-color", "#011F3F");
     if (level === 0) {
         nextSequence();
@@ -63,7 +63,7 @@ function gameOver() {
     match = false;
     playSound("wrong");
     $("body").css("background-color", "red");
-    $("h1").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Game Over, Press HERE to Restart");
     gamePattern = [];
     level = 0;
 }
